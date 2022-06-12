@@ -27,3 +27,11 @@ func TestExample3(t *testing.T) {
 		t.Fatalf("expected %v, but actual is %v", expected, actual)
 	}
 }
+
+func TestOneChar(t *testing.T) {
+	s := " "
+	expected := 1
+	if actual := LengthOfLongestSubstrings(s); actual != expected {
+		t.Fatalf("expected %v, but actual is %v", expected, actual)
+	}
+}
